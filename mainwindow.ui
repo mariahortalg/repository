@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>561</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>48</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Proyecto Nego Space</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>574</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuNegos">
+    <property name="title">
+     <string>Negos</string>
+    </property>
+    <addaction name="actionCrear_Nego_2"/>
+   </widget>
+   <widget class="QMenu" name="menuOwners">
+    <property name="title">
+     <string>Owners</string>
+    </property>
+    <addaction name="actionCrear_Owners"/>
+   </widget>
+   <widget class="QMenu" name="menuOficinas">
+    <property name="title">
+     <string>Oficinas</string>
+    </property>
+    <addaction name="actionCrear_Oficinas"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuNegos"/>
+   <addaction name="menuOwners"/>
+   <addaction name="menuOficinas"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCrear_Nego">
+   <property name="text">
+    <string>Crear Nego</string>
+   </property>
+  </action>
+  <action name="actionCrear_Owners">
+   <property name="text">
+    <string>Crear Owners</string>
+   </property>
+  </action>
+  <action name="actionCrear_Oficinas">
+   <property name="text">
+    <string>Crear Oficinas</string>
+   </property>
+  </action>
+  <action name="actionCrear_Nego_2">
+   <property name="text">
+    <string>Crear Nego</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionCrear_Oficinas</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openOficinas()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCrear_Owners</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openOwners()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCrear_Nego_2</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openNegos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>signal1()</signal>
+  <slot>click()</slot>
+  <slot>openNegos()</slot>
+  <slot>openOwners()</slot>
+  <slot>openOficinas()</slot>
+  <slot>openMenuNegos()</slot>
+  <slot>openMenuOwners()</slot>
+  <slot>openMenuOficinas()</slot>
+ </slots>
+</ui>
